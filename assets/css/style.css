@@ -54,7 +54,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .back-to-top:hover {
-    background: #ffc550;
+    background: #f77c0a;
     color: #fff;
 }
 
@@ -606,7 +606,7 @@ section {
 }
 
 .about .image {
-    background: url("../img/me2.jpg") center center no-repeat;
+    background: url("../img/me2.webp") center center no-repeat;
     background-size: cover;
     min-height: 500px;
     margin-bottom: 15px;
