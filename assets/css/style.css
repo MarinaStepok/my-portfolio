@@ -14,6 +14,7 @@
 body {
     font-family: "Open Sans", sans-serif;
     color: #444444;
+    min-width: 320px;
 }
 
 a {
@@ -118,7 +119,7 @@ h1, h2, h3, h4, h5, h6 {
 .navbar a, .navbar a:focus {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     padding: 10px 15px;
     color: #fff;
     white-space: nowrap;
@@ -248,7 +249,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .navbar-mobile ul {
     display: block;
-    position: absolute;
+    position: absolute;    
     top: 55px;
     right: 15px;
     bottom: 15px;
@@ -263,7 +264,7 @@ h1, h2, h3, h4, h5, h6 {
 .navbar-mobile a, .navbar-mobile a:focus {
     padding: 10px 20px;
     font-size: 14px;
-    color: #3b434a;
+    color: #3b434a;    
 }
 
 .navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover>a {
