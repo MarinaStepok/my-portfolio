@@ -263,7 +263,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .navbar-mobile a, .navbar-mobile a:focus {
     padding: 10px 20px;
-    font-size: 14px;
+    font-size: 18px;
     color: #3b434a;    
 }
 
@@ -478,6 +478,20 @@ section {
     text-transform: uppercase;
 }
 
+#about .text-about p {
+    margin-bottom: 30px;
+}
+
+/* #about .about-list {
+    padding-top: 20px;
+} */
+
+/* @media (min-width: 991px) {
+    #about .about-list {
+        padding-top: 0;
+    }
+} */
+
 .about .content ul {
     list-style: none;
     padding: 0;
@@ -551,7 +565,7 @@ section {
     background: url("../img/me2.webp") center center no-repeat;
     background-size: cover;
     min-height: 500px;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
 }
 
 .about .skills-content {
@@ -689,6 +703,50 @@ section {
 .resources p {
     margin-top: 16px;
 }
+
+/*--------------------------------------------------------------
+# My services
+--------------------------------------------------------------*/
+
+#services .card-body h5 {
+    font-weight: 700;
+    color: #777777;
+    margin-bottom: 16px;
+    font-size: 18px;
+}
+
+#services .card-body {
+    border: 1px solid rgb(232, 232, 232);
+}
+
+#services .card-title {
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+}
+
+#services .card-text {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-left: 0;
+}
+
+#services .card-text .card-text__item {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+#services .card-text .card-text__text {
+    margin: 0;
+    padding: 0;
+}
+
+#services i {
+    color: #ffb727;
+}
+
 
 /*--------------------------------------------------------------
 # Contact Me
