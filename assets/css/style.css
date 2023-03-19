@@ -1,4 +1,3 @@
-
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -7,7 +6,7 @@
     --main-color: #e94e1f;
     /* --color-1: #231fec;
     --color: #231fec; */
-    --link-color:#ffb727;
+    --link-color: #ffb727;
     --link-color-hover: #f77c0a;
 }
 
@@ -16,6 +15,7 @@ body {
     color: #444444;
     min-width: 320px;
 }
+
 
 a {
     color: #ffb727;
@@ -256,7 +256,7 @@ h3 {
 
 .navbar-mobile ul {
     display: block;
-    position: absolute;    
+    position: absolute;
     top: 55px;
     right: 15px;
     bottom: 15px;
@@ -271,7 +271,7 @@ h3 {
 .navbar-mobile a, .navbar-mobile a:focus {
     padding: 10px 20px;
     font-size: 18px;
-    color: #3b434a;    
+    color: #3b434a;
 }
 
 .navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover>a {
@@ -319,16 +319,15 @@ h3 {
 --------------------------------------------------------------*/
 #hero {
     width: 100%;
-    height: 100vh;
-    /* background: url("../img/develop.jpg") top right; */
-    background: url("../img/main_designe-2.webp") top center;
+    height: 80vh;
+    background: url("../img/designe-3.webp") top center;
     background-size: cover;
     position: relative;
 }
 
 #hero:before {
     content: "";
-    background: rgba(24, 24, 24, 0.80);
+    background: rgba(24, 24, 24, 0.85);
     position: absolute;
     bottom: 0;
     top: 0;
@@ -359,10 +358,20 @@ h3 {
 #hero h2 {
     color: #eee;
     margin-bottom: 50px;
-    font-size: 18px;
+    font-size: 30px;
     font-weight: 500;
     letter-spacing: 1px;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
+}
+
+#hero h4 {
+    font-size: 20px;
+    color: #ffb727;
+    text-align: center;
+}
+
+#hero .hero-text {
+    color: #ffb727;
 }
 
 #hero .btn-scroll {
@@ -387,13 +396,20 @@ h3 {
 
 @media (max-width: 575px) {
     #hero h1 {
-        font-size: 40px;
+        font-size: 50px;
     }
 
     #hero h2 {
-        text-align: center;
         margin-bottom: 30px;
+        font-size: 22px;
+        text-align: center;
     }
+
+    #hero h4 {
+        font-size: 18px;
+        text-align: center;
+    }
+
 }
 
 @-webkit-keyframes up-down {
@@ -429,7 +445,7 @@ section {
 
 .section-title {
     text-align: center;
-    padding: 30px 0;
+    padding: 40px 0;
     position: relative;
 }
 
@@ -631,7 +647,7 @@ section {
 
 .portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
     color: #f3a200;
-    border-color: #ffb727;
+    border-color: #f3a200;
 }
 
 .portfolio .portfolio-item {
@@ -706,12 +722,30 @@ section {
 --------------------------------------------------------------*/
 
 #services .card-body {
-   box-shadow: 0 0 30px rgb(214 215 216 / 60%);
+    box-shadow: 0 0 30px rgb(214 215 216 / 60%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    transition: all 0.3s ease;
+    border-radius: 4px;
 }
 
-/* #services .card-body {
-    border: 1px solid rgb(232, 232, 232);
+#services .card-body:hover {
+    background-color: #e7e5e5;
+}
+
+/* #services .card-body:hover .card-icon {
+    filter: invert(45%) sepia(94%) saturate(1297%) hue-rotate(359deg) brightness(103%) contrast(94%);
 } */
+
+#services .card-icon {
+    width: 60px;
+    height: 60px;
+    /* transition: all 0.3s ease; */
+}
+
 
 #services .card-title {
     font-weight: 600;
@@ -732,13 +766,9 @@ section {
     align-items: center;
 }
 
-#services .card-text .card-text__text {
-    margin: 0;
-    padding: 0;
-}
-
-#services i {
-    color: #ffb727;
+#services .card-text__text {
+    font-weight: 700;
+    color: #3b434a;
 }
 
 
@@ -753,15 +783,16 @@ section {
 }
 
 #contact .social-icon {
-    cursor: pointer;  
+    cursor: pointer;
 }
 
 #contact .social-icon i {
-   color: #ffffff;
-   background-color: #0a66c2;
-   font-size: 22px;
-   padding: 7px 7px;
-   transition: all 0.3s ease;
+    color: #ffffff;
+    background-color: #0a66c2;
+
+    font-size: 22px;
+    padding: 7px 7px;
+    transition: all 0.3s ease;
 }
 
 #contact .social-icon i:hover {
@@ -816,7 +847,7 @@ section {
 .contact .social-links a:hover {
     color: #fff;
     border-color: #ffb727;
-    background: #ffb727;
+
 }
 
 .contact .contact-email-form {
