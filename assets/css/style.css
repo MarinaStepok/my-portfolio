@@ -505,10 +505,10 @@ section {
     margin-bottom: 30px;
 }
 
-#about .bx {
+#about .progress .bx {
     color: #3b434a;
-    font-size: 25px;
-    padding-right: 10px;
+    font-size: 26px;
+    padding-right: 15px;
 }
 
 .about .content ul {
@@ -596,11 +596,12 @@ section {
     display: block;
     background: none;
     border-radius: 0;
+    margin-bottom: 10px;
 }
 
 .about .skills-content .progress .skill {
     padding: 5px 0;
-    margin: 0 0 10px 0;
+    margin: 0 0 5px 0;
     text-transform: uppercase;
     display: block;
     font-weight: 700;
